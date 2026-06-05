@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DiscIt — Privacy Policy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #f7f5f0;
+      --surface: #ffffff;
+      --ink: #1a1a18;
+      --muted: #6b6b60;
+      --accent: #2e6b3e;
+      --accent-light: #e8f2eb;
+      --border: #e2dfd8;
+      --radius: 10px;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      padding: 48px 20px 80px;
+    }
+
+    .wrapper {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    header {
+      margin-bottom: 48px;
+    }
+
+    .app-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--accent);
+      color: #fff;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 99px;
+      margin-bottom: 20px;
+    }
+
+    .disc-icon {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      border: 2px solid rgba(255,255,255,0.7);
+      background: rgba(255,255,255,0.2);
+    }
+
+    h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2rem, 5vw, 2.8rem);
+      font-weight: 400;
+      line-height: 1.15;
+      color: var(--ink);
+      margin-bottom: 12px;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* Divider */
+    hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 0 0 40px;
+    }
+
+    /* Sections */
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.25rem;
+      font-weight: 400;
+      color: var(--ink);
+      margin-bottom: 14px;
+    }
+
+    p {
+      color: #3a3a34;
+      margin-bottom: 12px;
+    }
+
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 12px;
+    }
+
+    ul li {
+      padding: 6px 0 6px 20px;
+      position: relative;
+      color: #3a3a34;
+      border-bottom: 1px solid var(--border);
+    }
+
+    ul li:last-child { border-bottom: none; }
+
+    ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      opacity: 0.6;
+    }
+
+    ul li strong {
+      color: var(--ink);
+      font-weight: 500;
+    }
+
+    /* Table */
+    .table-wrap {
+      overflow-x: auto;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      margin-bottom: 12px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 15px;
+    }
+
+    thead {
+      background: var(--accent-light);
+    }
+
+    thead th {
+      text-align: left;
+      padding: 10px 16px;
+      font-weight: 500;
+      font-size: 13px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    tbody td {
+      padding: 11px 16px;
+      border-top: 1px solid var(--border);
+      color: #3a3a34;
+      vertical-align: top;
+    }
+
+    tbody td:first-child {
+      font-weight: 500;
+      color: var(--ink);
+      white-space: nowrap;
+    }
+
+    /* "We do not" block */
+    .donot-list {
+      background: var(--accent-light);
+      border-radius: var(--radius);
+      padding: 16px 20px;
+    }
+
+    .donot-list li {
+      border-bottom-color: rgba(46,107,62,0.15);
+      color: #2a4a30;
+    }
+
+    .donot-list li::before {
+      background: var(--accent);
+    }
+
+    /* Links */
+    a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 2px;
+    }
+
+    a:hover { text-decoration: none; }
+
+    /* Contact card */
+    .contact-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .contact-icon {
+      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+      background: var(--accent-light);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .contact-icon svg { width: 18px; height: 18px; }
+
+    .contact-card a {
+      font-weight: 500;
+      font-size: 15px;
+    }
+
+    .contact-card p {
+      font-size: 13px;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 60px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="app-badge"><span class="disc-icon"></span>DiscIt</div>
+      <h1>Privacy Policy</h1>
+      <p class="meta">Effective date: June 2, 2026</p>
+    </header>
+
+    <hr />
+
+    <section>
+      <p>DiscIt ("the app", "we", "us") is a disc golf collection and practice tracker built and operated by its developer. This policy explains what information the app collects, how it is used, and your choices.</p>
+    </section>
+
+    <section>
+      <h2>What information the app collects</h2>
+      <p>DiscIt stores the following information <strong>locally on your device</strong>:</p>
+      <ul>
+        <li><strong>Disc collection data</strong> — mold names, manufacturers, flight numbers, weight, color, condition, photos, and notes you enter for each disc.</li>
+        <li><strong>Round data</strong> — course names, dates, scores, hole-by-hole data, and notes you record.</li>
+        <li><strong>Practice session data</strong> — throwing distances, shot types, putting distances, make/miss records, and session notes.</li>
+        <li><strong>Profile information</strong> — your name, email address, PDGA number, home course, dominant hand, and profile photo, if you choose to provide them.</li>
+        <li><strong>App settings</strong> — your preferences for display, sorting, units, and other in-app options.</li>
+      </ul>
+      <p>None of this information is transmitted to our servers. It stays on your device unless you choose to use iCloud Backup (see below).</p>
+    </section>
+
+    <section>
+      <h2>iCloud Backup (optional)</h2>
+      <p>If you are a DiscIt Pro subscriber and enable iCloud Backup, your app data is encrypted and stored in <strong>your personal iCloud account</strong> using Apple's CloudKit service. This data is private to you — we have no access to it. Apple's privacy policy governs how iCloud data is stored and protected: <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/legal/privacy</a>.</p>
+    </section>
+
+    <section>
+      <h2>Device permissions</h2>
+      <p>The app requests the following permissions only when needed:</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Permission</th>
+              <th>Why it's used</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Photo Library</td>
+              <td>Adding photos to disc entries or your profile picture</td>
+            </tr>
+            <tr>
+              <td>Camera</td>
+              <td>Taking photos of discs directly within the app</td>
+            </tr>
+            <tr>
+              <td>Location</td>
+              <td>Measuring throw distances during practice sessions</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Location data is used only in real time to calculate distances. It is not stored, logged, or transmitted.</p>
+    </section>
+
+    <section>
+      <h2>What we do not do</h2>
+      <ul class="donot-list">
+        <li>We do not collect analytics, crash reports, or usage data.</li>
+        <li>We do not use advertising identifiers or track you across other apps or websites.</li>
+        <li>We do not sell, rent, or share your data with any third party.</li>
+        <li>We do not have access to any data stored in your iCloud account.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>In-App Purchases</h2>
+      <p>DiscIt Pro is available as an in-app purchase. Purchase transactions are processed by Apple. We do not receive or store your payment information. Apple's App Store privacy policy applies to all transactions.</p>
+      <p>We use <a href="https://www.revenuecat.com" target="_blank" rel="noopener">RevenueCat</a> to manage subscription status and entitlements. RevenueCat's SDK may collect certain information to verify and process your purchase, such as a device identifier and purchase receipt data. RevenueCat's privacy policy is available at <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a>.</p>
+    </section>
+
+    <section>
+      <h2>Data deletion</h2>
+      <p>All data stored by DiscIt lives on your device. To delete it, delete the app. If you have enabled iCloud Backup, you can delete your iCloud data by going to <strong>Settings → [your name] → iCloud → Manage Account Storage</strong> and removing DiscIt's data.</p>
+    </section>
+
+    <section>
+      <h2>Children's privacy</h2>
+      <p>DiscIt does not knowingly collect information from children under 13. The app does not require account creation or collect any personally identifying information for the app to function.</p>
+    </section>
+
+    <section>
+      <h2>Changes to this policy</h2>
+      <p>If we make material changes to this policy, we will update the effective date above and note the change in the app's release notes.</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <div class="contact-card">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#2e6b3e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="4" width="20" height="16" rx="2"/>
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+          </svg>
+        </div>
+        <div>
+          <a href="mailto:discitapp@gmail.com">discitapp@gmail.com</a>
+          <p>Questions about this privacy policy? Reach out anytime.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 James Roberts · DiscIt</p>
+    </footer>
+  </div>
+</body>
+</html>
